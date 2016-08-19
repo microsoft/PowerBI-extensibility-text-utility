@@ -1,17 +1,17 @@
 module powerbi.extensibility {
     export interface TextProperties {
-        text?: string;
-        fontFamily: string;
+        text: string;
         fontSize: string;
+        fontFamily: string;
         fontWeight?: string;
         fontStyle?: string;
         fontVariant?: string;
-        whiteSpace?: string;
     }
 
     export module TextUtility {
         let canvasCtx;
         let ellipsis = '…';
+
         function ensureCanvas() {
             if (canvasCtx)
                 return;
@@ -29,10 +29,9 @@ module powerbi.extensibility {
                 (textProperties.fontVariant || "") + " " +
                 (textProperties.fontWeight || "") + " " +
                 textProperties.fontSize + " " +
-                (textProperties.fontFamily);
+                textProperties.fontFamily;
             return canvasCtx.measureText(textProperties.text).width;
         }
-        TextUtility.measureTextWidth = measureTextWidth;
         /**
          * Compares labels text size to the available size and renders ellipses when the available size is smaller.
          * @param textProperties The text properties (including text content) to use for text measurement.
