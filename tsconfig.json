@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ES5"
+    },
+    "files": [
+        "typings/index.d.ts",
+        "textUtility.ts",
+        "spec/textUtilitySpec.ts"
+    ]
+}
