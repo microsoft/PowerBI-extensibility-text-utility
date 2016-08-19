@@ -1,4 +1,4 @@
-namespace powerbi.extensibility.tests {
+module powerbi.extensibility.tests {
     function createTextProperties() {
         return { text: '', fontFamily: 'sans-serif', fontSize: '20px' };
     }
