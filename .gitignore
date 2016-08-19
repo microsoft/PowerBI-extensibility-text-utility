@@ -1,4 +1,4 @@
 node_modules
 typings
-textUtility.js
+src/*.js
 spec/*.js

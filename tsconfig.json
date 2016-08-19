@@ -4,7 +4,7 @@
     },
     "files": [
         "typings/index.d.ts",
-        "textUtility.ts",
+        "src/textUtility.ts",
         "spec/textUtilitySpec.ts"
     ]
 }
