@@ -3,9 +3,16 @@
 # Text utility
 A utility for doing speedy text measurement, and trimming text.
 
-### Usage
+### Usage (using textUtility.ts in your projects)
 
 ```
 let props = { text: 'Some text to measure', fontFamily: 'sans-serif', fontSize: '20px' };
 let length = TextUtility.measureTextWidth(props);
+```
+
+### Development (build + test for contirbuting to this library)
+
+```
+npm install
+npm test
 ```
