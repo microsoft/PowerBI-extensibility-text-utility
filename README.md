@@ -6,6 +6,6 @@ A utility for doing speedy text measurement
 ### Usage
 
 ```
-let props = { text: 'Some text to measurem', fontFamily: 'sans-serif', fontSize: '20px' };
+let props = { text: 'Some text to measure', fontFamily: 'sans-serif', fontSize: '20px' };
 let length = TextUtility.measureTextWidth(props);
 ```
